@@ -1,0 +1,7 @@
+C:\Users\Ondřej Ševčík\source\repos\Battle\Battle\bin\Debug\Battle.exe.config
+C:\Users\Ondřej Ševčík\source\repos\Battle\Battle\bin\Debug\Battle.exe
+C:\Users\Ondřej Ševčík\source\repos\Battle\Battle\bin\Debug\Battle.pdb
+C:\Users\Ondřej Ševčík\source\repos\Battle\Battle\obj\Debug\Battle.csprojAssemblyReference.cache
+C:\Users\Ondřej Ševčík\source\repos\Battle\Battle\obj\Debug\Battle.csproj.CoreCompileInputs.cache
+C:\Users\Ondřej Ševčík\source\repos\Battle\Battle\obj\Debug\Battle.exe
+C:\Users\Ondřej Ševčík\source\repos\Battle\Battle\obj\Debug\Battle.pdb
