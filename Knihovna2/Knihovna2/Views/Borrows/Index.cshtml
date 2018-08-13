@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Knihovna2.Models.Borrow>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Reader)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Book)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BorrowedSince)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BorrowedTo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reader.LastName)
+            @Html.DisplayFor(modelItem => item.Reader.FirstMidName)
+            @Html.DisplayFor(modelItem => item.ReaderID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Book.Title)
+            @Html.DisplayFor(modelItem => item.BookID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BorrowedSince)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BorrowedTo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

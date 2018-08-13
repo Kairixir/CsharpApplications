@@ -1,0 +1,81 @@
+﻿@model Knihovna2.Models.Reader
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reader</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstMidName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstMidName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Registration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Registration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MembershipFee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MembershipFee)
+        </dd>
+        <dd>
+
+        </dd><dt></dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Borrows)
+        </dt>
+        
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Borrows</th>
+                    <th>Borrowed since</th>
+                    <th>Borrowed to</th>
+
+                </tr>
+                @foreach (var item in Model.Borrows)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Book.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BorrowedSince)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BorrowedTo)
+                    </td>
+                </tr>
+                }
+            </table>
+        </dd>
+    </dl>
+    
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

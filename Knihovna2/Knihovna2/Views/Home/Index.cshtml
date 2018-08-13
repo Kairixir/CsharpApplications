@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Knihovna</h1>
+    <p class="lead">Tento projekt se zabývá simulací knihovních systémů</p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Čtenáři</h2>
+        <p>Databáze čtenářů</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Readers")">Vstupte &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Knihy</h2>
+        <p>Databáze knih</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Books")">Vstupte &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Systém výpůjček</h2>
+        <p>Pod tímto odkazem je možné vypůjčit knihu</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Borrows")">Vstupte &raquo;</a></p>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿@model Knihovna2.Models.Borrow
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Borrow</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReaderID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReaderID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BorrowedSince)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BorrowedSince)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BorrowedTo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BorrowedTo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
